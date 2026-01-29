@@ -16,6 +16,8 @@ Or install from GitHub:
 pip install git+https://github.com/StefanGentz/pylint-sqlalchemy2.git
 ```
 
+See also: [pylint-sqlalchemy2 on PyPi](https://pypi.org/project/pylint-sqlalchemy2/)
+
 ## Usage
 
 Add the plugin to your `.pylintrc`:

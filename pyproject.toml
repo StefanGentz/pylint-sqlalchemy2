@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pylint-sqlalchemy2"
-version = "0.1.0"
+version = "0.2.0"
 description = "Pylint plugin for SQLAlchemy 2.x compatibility - fixes false positives for func.count(), func.sum(), etc."
 readme = "README.md"
 license = "MIT"
@@ -42,6 +42,9 @@ Issues = "https://github.com/StefanGentz/pylint-sqlalchemy2/issues"
 [tool.hatch.build.targets.wheel]
 packages = ["src/pylint_sqlalchemy2"]
 
+[tool.hatch.build.targets.wheel.force-include]
+"src/pylint_sqlalchemy2.pth" = "pylint_sqlalchemy2.pth"
+
 [tool.hatch.build.targets.sdist]
 include = [
     "/src",
@@ -55,3 +58,6 @@ dev = [
     "pytest>=7.0",
     "pytest-cov>=4.0",
 ]
+
+[project.scripts]
+pylint-sqlalchemy2 = "pylint_sqlalchemy2.cli:main"

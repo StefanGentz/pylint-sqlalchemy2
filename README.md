@@ -39,11 +39,13 @@ The plugin uses a `.pth` file to automatically register Astroid transforms when 
 If you prefer explicit configuration, you can also use:
 
 **Command line:**
+
 ```bash
 pylint --load-plugins=pylint_sqlalchemy2 your_code.py
 ```
 
 **pylintrc or pyproject.toml:**
+
 ```ini
 [MASTER]
 load-plugins=pylint_sqlalchemy2
@@ -62,4 +64,4 @@ The original [pylint-sqlalchemy](https://github.com/gwax/pylint-sqlalchemy) pack
 
 ## License
 
-MIT License
+[MIT License](https://github.com/StefanGentz/pylint-sqlalchemy2/blob/main/LICENSE "MIT License")

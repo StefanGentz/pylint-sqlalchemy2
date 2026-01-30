@@ -1,0 +1,20 @@
+# Example Pylint configuration for SQLAlchemy projects
+#
+# Copy this file to your project root as .pylintrc or pylintrc,
+# or merge the relevant settings into your existing configuration.
+
+[MESSAGES CONTROL]
+
+# Disable singleton-comparison (C0121) globally.
+# SQLAlchemy requires == for column comparisons (e.g., User.is_active == True)
+# because it generates SQL, not Python identity checks.
+disable=singleton-comparison
+
+# Alternative: Disable only for specific files or directories using
+# pyproject.toml with per-file-ignores (Pylint 2.13+):
+#
+# [tool.pylint.messages_control]
+# disable = ["singleton-comparison"]
+#
+# Or selectively with inline comments:
+# query = select(User).where(User.is_active == True)  # pylint: disable=singleton-comparison

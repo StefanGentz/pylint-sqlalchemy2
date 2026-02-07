@@ -90,3 +90,7 @@ The original [pylint-sqlalchemy](https://github.com/gwax/pylint-sqlalchemy) pack
 ## License
 
 [MIT License](https://github.com/StefanGentz/pylint-sqlalchemy2/blob/main/LICENSE "MIT License")
+
+## Statistics
+
+[ClickPy Stats](https://clickpy.clickhouse.com/dashboard/pylint-sqlalchemy2)
